@@ -67,7 +67,7 @@ const RecipePage = () => {
 
   return (
     <div className="bg-primary font-poppins h-full pt-0">
-      <h1 className="text-white text-3xl font-bold flex justify-center items-center">Handpicked Collection of Recipes</h1>
+      <h1 className="text-white text-2xl md:text-3xl font-bold flex justify-center items-center text-center">Handpicked Collection of Recipes</h1>
       <div className="flex flex-wrap  items-center justify-center">
         {recipeData.map((item, index) => (
           <Link key={index} href={`/recipe/${item.id}`}>

@@ -4,15 +4,13 @@ import { FaUserAlt } from "react-icons/fa";
 
 const PrivateNavbar = () => {
     return (
-        <div className='bg-primary text-white h-20 flex justify-between items-center px-20'>
+        <div className='bg-primary text-white h-20 flex justify-between items-center px-10 md:px-20'>
             <div>
-                <Link href="/">
-                    <h1 className='font-semibold text-2xl cursor-pointer'>LOGO</h1>
-                </Link>
+                <a href="/" className="flex items-center">
+                    <img src="/ourlogo.png" alt='logo' className='w-16 object-contain' />
+                    <h1 className='font-semibold text-lg md:text-xl cursor-pointer text-white'>OptiHealth Cuisine</h1>
+                </a>
             </div>
-            {/* <div className='text-lg font-medium'>
-                <p className=''>Home</p>
-            </div> */}
             <div>
                 <Link href="/profile">
                     <FaUserAlt className='text-3xl' />
